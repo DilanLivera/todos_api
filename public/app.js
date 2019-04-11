@@ -15,13 +15,13 @@ $(document).ready(() => {
     //update a todo
     $('.list').on('click', 'li', function() {
         updateToDo($(this));
-    })
+    });
     
     //delete a todo
     $('.list').on('click', 'span', function(event) { 
         event.stopPropagation();
         removeToDo($(this).parent());
-    })
+    });
 });
 
 //add an array of todos
